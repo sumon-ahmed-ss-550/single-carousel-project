@@ -1,0 +1,76 @@
+/*===================================================
+BASIC CSS STYLE START HERE
+======================================================*/
+*{
+    margin:0px;
+    padding:0px;
+    list-style-type:none;
+    box-sizing:border-box;
+    outline:none;
+    line-height:1.5rem;
+    }
+.container{
+    width:100%;
+    max-width:1200px;
+    margin:0px auto;
+    }
+/*===================================================
+BASIC CSS STYLE END HERE
+======================================================*/
+.carousel{
+    width:100%;
+    position:relative;
+    overflow:hidden;
+    }
+.carousel-inner{
+    display:flex;
+    flex-direction:row;
+    transition:0.5s ease;
+    }
+.carousel-item{
+    flex-basis:100%;
+    flex-grow:0;
+    flex-shrink:0;
+    }
+.carousel-item img{
+    width:100%;
+    height:auto;
+    display:block;
+    }
+button{
+    position:absolute;
+    border:none;
+    font-size:22px;
+    padding:12px 18px;
+    top:50%;
+    transform:translateY(-50%);
+    opacity:0.5;
+    border-radius:4px;
+    cursor:pointer;
+    }
+.prev{
+    left:10px;
+    }
+.next{
+    right:0px;
+    right:10px;
+    }
+.dot{
+    width:10px;
+    height:10px;
+    background-color:rgb(247, 238, 240);
+    border-radius:50%;
+    }
+.dots{
+    display:flex;
+    position:absolute;
+    bottom:10px;
+    left:50%;
+    transform:translateX(-50%);
+    gap:6px;
+    cursor:pointer;
+    }
+
+.active{
+    background-color:#000;
+    }
